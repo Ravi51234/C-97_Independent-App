@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>A Puzzling Picture Quiz!!!</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body onload="upload()">
+    <div class="container">
+      <center>
+      <h1 class="page_header">Puzzling Picture Quiz</h1>
+      <div id="box">
+        <div id="question">
+          <h3 class="text-capitalize" id="heading">Q.Can you Guess The Given Picture</h3>
+          <img id="image" src="">
+        </div>
+        <div id="answer">
+          <label class="option" id="option1" class="col-lg-12 col-md-12 col-sm-6 col-sx-6"></label>
+          <br>
+          <label class="option" id="option2" class="col-lg-12 col-md-12 col-sm-6 col-sx-6"></label>
+          <br>
+          <label class="option" id="option3" class="col-lg-12 col-md-12 col-sm-6 col-sx-6"></label>
+          <br>
+          <label class="option" id="option4" class="col-lg-12 col-md-12 col-sm-6 col-sx-6"></label>
+          <br>
+          <input style="width:30%;" class="form-control" id="input" placeholder="Your Answer">
+          <h4><kbd style="color:white;font-family:monospace;"><b style="color:black;">Note - </b> The Spellings should be in lower case.</kbd></h4>
+          <br>
+          <h4 id="result"></h4>
+          <button onclick="submit()" class="btn btn-danger">Submit</button>
+          <button style="display:none;" onclick="upload()" id="next" class="btn btn-primary">Next</button>
+          </div>
+      </div>
+      </center>
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
